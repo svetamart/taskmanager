@@ -1,4 +1,4 @@
-package com.example.taskmanager;
+package com.example.taskmanager.model;
 
 public enum TaskStatus {
     NOT_STARTED,

@@ -1,13 +1,15 @@
-package com.example.taskmanager;
+package com.example.taskmanager.service;
 
 
+import com.example.taskmanager.model.Person;
+import com.example.taskmanager.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class ExecutorService {
+public class PersonService {
 
     @Autowired
     private PersonRepository personRepository;

@@ -16,7 +16,7 @@ public class UserActionLoggingAspect {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Pointcut("execution(* com.example.taskmanager.TaskService.*(..)) || execution(* com.example.taskmanager.TaskController.*(..))")
+    @Pointcut("execution(* com.example.taskmanager.service.TaskService.*(..)) || execution(* com.example.taskmanager.controller.TaskController.*(..))")
     public void serviceAndControllerMethods() {
 
     }

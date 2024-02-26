@@ -1,5 +1,10 @@
-package com.example.taskmanager;
+package com.example.taskmanager.controller;
 
+import com.example.taskmanager.model.Person;
+import com.example.taskmanager.model.Task;
+import com.example.taskmanager.model.TaskStatus;
+import com.example.taskmanager.service.PersonService;
+import com.example.taskmanager.service.TaskService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -18,7 +23,7 @@ public class TaskController {
     private TaskService taskService;
 
     @Autowired
-    private ExecutorService executorService;
+    private PersonService personService;
 
 
     @Operation(summary = "Get all tasks", description = "Get a list of all tasks")
@@ -48,9 +53,9 @@ public class TaskController {
             for (Person executor : executors) {
                 String executorName = executor.getName();
                 if (executorName != null) {
-                    Person existingExecutor = executorService.getExecutorByName(executorName);
+                    Person existingExecutor = personService.getExecutorByName(executorName);
                     if (existingExecutor == null) {
-                        executorService.addExecutor(executor);
+                        personService.addExecutor(executor);
                     }
                 }
             }
@@ -79,13 +84,13 @@ public class TaskController {
 
     @GetMapping("/executors")
     public ResponseEntity<List<Person>> getAllExecutors() {
-        List<Person> executors = executorService.getAllExecutors();
+        List<Person> executors = personService.getAllExecutors();
         return ResponseEntity.ok(executors);
     }
 
     @GetMapping("/executors/id/{id}")
     public ResponseEntity<Person> getExecutorById(@PathVariable Long id) {
-        Person executor = executorService.getExecutorById(id);
+        Person executor = personService.getExecutorById(id);
         if (executor != null) {
             return ResponseEntity.ok(executor);
         } else {
@@ -95,13 +100,13 @@ public class TaskController {
 
     @PostMapping("/executors")
     public ResponseEntity<String> addExecutor(@RequestBody Person person) {
-        executorService.addExecutor(person);
+        personService.addExecutor(person);
         return ResponseEntity.ok("Executor successfully added");
     }
 
     @GetMapping("/executors/name/{name}")
     public ResponseEntity<Person> getExecutorByName(@PathVariable String name) {
-        Person executor = executorService.getExecutorByName(name);
+        Person executor = personService.getExecutorByName(name);
         if (executor != null) {
             return ResponseEntity.ok(executor);
         } else {

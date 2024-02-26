@@ -1,5 +1,9 @@
-package com.example.taskmanager;
+package com.example.taskmanager.service;
 
+import com.example.taskmanager.model.Person;
+import com.example.taskmanager.model.Task;
+import com.example.taskmanager.repository.TaskRepository;
+import com.example.taskmanager.model.TaskStatus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,10 +12,16 @@ import java.util.List;
 
 @Service
 public class TaskService {
+
+    private final TaskRepository taskRepository;
+
+    private final PersonService personService;
+
     @Autowired
-    private TaskRepository taskRepository;
-    @Autowired
-    private ExecutorService executorService;
+    public TaskService(TaskRepository taskRepository, PersonService personService) {
+        this.personService = personService;
+        this.taskRepository = taskRepository;
+    }
 
     public List<Task> getAllTasks() {
         return taskRepository.findAll();
@@ -44,7 +54,7 @@ public class TaskService {
 
     public void assignExecutor(Long id, Long executorId) {
         Task existingTask = taskRepository.findById(id).get();
-        Person executor = executorService.getExecutorById(executorId);
+        Person executor = personService.getExecutorById(executorId);
         existingTask.addExecutors(executor);
 
         taskRepository.save(existingTask);

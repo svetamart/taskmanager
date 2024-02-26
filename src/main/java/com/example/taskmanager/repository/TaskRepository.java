@@ -1,5 +1,7 @@
-package com.example.taskmanager;
+package com.example.taskmanager.repository;
 
+import com.example.taskmanager.model.Task;
+import com.example.taskmanager.model.TaskStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
