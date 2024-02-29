@@ -1,9 +1,10 @@
 package com.example.taskmanager.service;
 
+import com.example.taskmanager.model.BaseTask;
 import com.example.taskmanager.model.Person;
-import com.example.taskmanager.model.Task;
 import com.example.taskmanager.repository.TaskRepository;
 import com.example.taskmanager.model.TaskStatus;
+import com.fasterxml.jackson.databind.ser.Serializers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -23,42 +24,45 @@ public class TaskService {
         this.taskRepository = taskRepository;
     }
 
-    public List<Task> getAllTasks() {
+    public List<BaseTask> getAllTasks() {
         return taskRepository.findAll();
     }
 
-    public Task getTaskById(Long id) {
+    public BaseTask getTaskById(Long id) {
         return taskRepository.findById(id).orElse(null);
     }
 
-    public void addTask(Task task) {
-        task.setCreationDate(new Date());
+    public void addTask(BaseTask task) {
         taskRepository.save(task);
     }
 
     public void updateTaskStatus(Long id, TaskStatus status) {
-        Task task = getTaskById(id);
+        BaseTask task = getTaskById(id);
         if (task != null) {
             task.setStatus(status);
             taskRepository.save(task);
         }
     }
 
+    public void updateTask (Long id, BaseTask task) {
+        BaseTask existingTask = getTaskById(id);
+
+        existingTask.setDescription(task.getDescription());
+        existingTask.setStatus(task.getStatus());
+        existingTask.setCreationDate(task.getCreationDate());
+
+        taskRepository.save(existingTask);
+    }
+    public void saveTask(BaseTask task) {
+        taskRepository.save(task);
+    }
+
     public void deleteTask(Long id) {
         taskRepository.deleteById(id);
     }
 
-    public List<Task> getTasksByStatus(TaskStatus status) {
+    public List<BaseTask> getTasksByStatus(TaskStatus status) {
         return taskRepository.findByStatus(status);
-    }
-
-    public void assignExecutor(Long id, Long executorId) {
-        Task existingTask = taskRepository.findById(id).get();
-        Person executor = personService.getExecutorById(executorId);
-        existingTask.addExecutors(executor);
-
-        taskRepository.save(existingTask);
-
     }
 }
 

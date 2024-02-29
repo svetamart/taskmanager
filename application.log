@@ -1,52 +1,197 @@
-2024-02-18T00:00:00.936+03:00  INFO 34484 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-02-18T00:00:00.946+03:00  INFO 34484 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-02-18T00:00:00.950+03:00  INFO 34484 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2024-02-18T00:00:01.005+03:00  INFO 34484 --- [http-nio-8080-exec-2] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Params: []
-2024-02-18T00:00:01.006+03:00  INFO 34484 --- [http-nio-8080-exec-2] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Params: []
-2024-02-18T00:00:01.293+03:00  INFO 34484 --- [http-nio-8080-exec-2] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Result: [com.example.taskmanager.model.Task@244d1145, com.example.taskmanager.model.Task@45721bef, com.example.taskmanager.model.Task@3fe2e1cc, com.example.taskmanager.model.Task@50b60c9e]. Execution Time: 287 ms
-2024-02-18T00:00:01.302+03:00  INFO 34484 --- [http-nio-8080-exec-2] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Result: <200 OK OK,[com.example.taskmanager.model.Task@244d1145, com.example.taskmanager.model.Task@45721bef, com.example.taskmanager.model.Task@3fe2e1cc, com.example.taskmanager.model.Task@50b60c9e],[]>. Execution Time: 298 ms
-2024-02-18T00:02:15.118+03:00  INFO 34484 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.addTask(..): Params: [com.example.taskmanager.model.Task@5d19443]
-2024-02-18T00:02:15.199+03:00  INFO 34484 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Params: [com.example.taskmanager.model.Task@5d19443]
-2024-02-18T00:02:15.226+03:00  INFO 34484 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Result: null. Execution Time: 27 ms
-2024-02-18T00:02:15.226+03:00  INFO 34484 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.addTask(..): Result: <200 OK OK,Task successfully added,[]>. Execution Time: 108 ms
-2024-02-18T00:03:16.898+03:00  INFO 34484 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Params: []
-2024-02-18T00:03:16.898+03:00  INFO 34484 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Params: []
-2024-02-18T00:03:16.905+03:00  INFO 34484 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Result: [com.example.taskmanager.model.Task@1e4ec687, com.example.taskmanager.model.Task@4d9912c7, com.example.taskmanager.model.Task@5015ffd6, com.example.taskmanager.model.Task@1149c6a8, com.example.taskmanager.model.Task@6d3c04f6]. Execution Time: 7 ms
-2024-02-18T00:03:16.906+03:00  INFO 34484 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Result: <200 OK OK,[com.example.taskmanager.model.Task@1e4ec687, com.example.taskmanager.model.Task@4d9912c7, com.example.taskmanager.model.Task@5015ffd6, com.example.taskmanager.model.Task@1149c6a8, com.example.taskmanager.model.Task@6d3c04f6],[]>. Execution Time: 8 ms
-2024-02-18T00:03:40.805+03:00  WARN 34484 --- [http-nio-8080-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
-2024-02-18T00:03:51.325+03:00  INFO 34484 --- [http-nio-8080-exec-10] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.updateTaskStatus(..): Params: [6, IN_PROGRESS]
-2024-02-18T00:03:51.326+03:00  INFO 34484 --- [http-nio-8080-exec-10] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.updateTaskStatus(..): Params: [6, IN_PROGRESS]
-2024-02-18T00:03:51.501+03:00  INFO 34484 --- [http-nio-8080-exec-10] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.updateTaskStatus(..): Result: null. Execution Time: 175 ms
-2024-02-18T00:03:51.502+03:00  INFO 34484 --- [http-nio-8080-exec-10] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.updateTaskStatus(..): Result: <200 OK OK,Task status updated,[]>. Execution Time: 177 ms
-2024-02-18T00:05:08.063+03:00  INFO 34484 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.deleteTask(..): Params: [3]
-2024-02-18T00:05:08.064+03:00  INFO 34484 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.deleteTask(..): Params: [3]
-2024-02-18T00:05:08.208+03:00  INFO 34484 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.deleteTask(..): Result: null. Execution Time: 144 ms
-2024-02-18T00:05:08.209+03:00  INFO 34484 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.deleteTask(..): Result: <200 OK OK,Task deleted,[]>. Execution Time: 146 ms
-2024-02-18T00:05:16.589+03:00  INFO 34484 --- [http-nio-8080-exec-5] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Params: []
-2024-02-18T00:05:16.590+03:00  INFO 34484 --- [http-nio-8080-exec-5] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Params: []
-2024-02-18T00:05:16.600+03:00  INFO 34484 --- [http-nio-8080-exec-5] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Result: [com.example.taskmanager.model.Task@68bce1db, com.example.taskmanager.model.Task@429af101, com.example.taskmanager.model.Task@6cf27dd6, com.example.taskmanager.model.Task@65a525e7]. Execution Time: 10 ms
-2024-02-18T00:05:16.601+03:00  INFO 34484 --- [http-nio-8080-exec-5] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Result: <200 OK OK,[com.example.taskmanager.model.Task@68bce1db, com.example.taskmanager.model.Task@429af101, com.example.taskmanager.model.Task@6cf27dd6, com.example.taskmanager.model.Task@65a525e7],[]>. Execution Time: 12 ms
-2024-02-18T00:05:44.148+03:00  INFO 34484 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllExecutors(): Params: []
-2024-02-18T00:05:44.163+03:00  INFO 34484 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllExecutors(): Result: <200 OK OK,[com.example.taskmanager.model.Person@763c93f, com.example.taskmanager.model.Person@56683e4, com.example.taskmanager.model.Person@44d05937, com.example.taskmanager.model.Person@312175b5],[]>. Execution Time: 15 ms
-2024-02-18T00:06:15.254+03:00  INFO 34484 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-02-18T00:06:15.259+03:00  INFO 34484 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-02-18T00:06:15.264+03:00  INFO 34484 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-02-26T23:26:11.680+03:00  INFO 116216 --- [main] c.example.taskmanager.PersonServiceTest  : Starting PersonServiceTest using Java 19.0.1 with PID 116216 (started by 79818 in C:\Users\79818\Desktop\Java\Spring\taskmanager)
-2024-02-26T23:26:11.682+03:00  INFO 116216 --- [main] c.example.taskmanager.PersonServiceTest  : No active profile set, falling back to 1 default profile: "default"
-2024-02-26T23:26:13.870+03:00  INFO 116216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-02-26T23:26:14.077+03:00  INFO 116216 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 175 ms. Found 2 JPA repository interfaces.
-2024-02-26T23:26:16.101+03:00  INFO 116216 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-02-26T23:26:16.359+03:00  INFO 116216 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
-2024-02-26T23:26:16.461+03:00  INFO 116216 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-02-26T23:26:17.325+03:00  INFO 116216 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-02-26T23:26:17.376+03:00  INFO 116216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-02-26T23:26:17.596+03:00  INFO 116216 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60f662bd
-2024-02-26T23:26:17.598+03:00  INFO 116216 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-02-26T23:26:19.144+03:00  INFO 116216 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-02-26T23:26:19.463+03:00  INFO 116216 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-02-26T23:26:20.363+03:00  WARN 116216 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-02-26T23:26:20.874+03:00  WARN 116216 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
-2024-02-26T23:26:21.118+03:00  INFO 116216 --- [main] c.example.taskmanager.PersonServiceTest  : Started PersonServiceTest in 10.012 seconds (process running for 12.2)
-2024-02-26T23:26:22.409+03:00  INFO 116216 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-02-26T23:26:22.414+03:00  INFO 116216 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-02-26T23:26:22.425+03:00  INFO 116216 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-01T00:16:19.472+03:00  INFO 131784 --- [restartedMain] c.e.taskmanager.TaskmanagerApplication   : Starting TaskmanagerApplication using Java 19.0.1 with PID 131784 (C:\Users\79818\Desktop\Java\Spring\taskmanager\target\classes started by 79818 in C:\Users\79818\Desktop\Java\Spring\taskmanager)
+2024-03-01T00:16:19.482+03:00  INFO 131784 --- [restartedMain] c.e.taskmanager.TaskmanagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-01T00:16:19.563+03:00  INFO 131784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-01T00:16:19.563+03:00  INFO 131784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-01T00:16:20.774+03:00  INFO 131784 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-01T00:16:20.860+03:00  INFO 131784 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2024-03-01T00:16:22.033+03:00  INFO 131784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-01T00:16:22.053+03:00  INFO 131784 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-01T00:16:22.054+03:00  INFO 131784 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-03-01T00:16:22.139+03:00  INFO 131784 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-01T00:16:22.140+03:00  INFO 131784 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2576 ms
+2024-03-01T00:16:22.378+03:00  INFO 131784 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-01T00:16:22.487+03:00  INFO 131784 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-03-01T00:16:22.543+03:00  INFO 131784 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-01T00:16:22.873+03:00  INFO 131784 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-01T00:16:22.909+03:00  INFO 131784 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-01T00:16:23.101+03:00  INFO 131784 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@721417b0
+2024-03-01T00:16:23.104+03:00  INFO 131784 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-01T00:16:24.589+03:00  INFO 131784 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-01T00:16:24.765+03:00  INFO 131784 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-01T00:16:25.473+03:00  WARN 131784 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-01T00:16:25.880+03:00  WARN 131784 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-03-01T00:16:26.190+03:00  INFO 131784 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-01T00:16:26.249+03:00  INFO 131784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-01T00:16:26.274+03:00  INFO 131784 --- [restartedMain] c.e.taskmanager.TaskmanagerApplication   : Started TaskmanagerApplication in 7.578 seconds (process running for 8.286)
+2024-03-01T00:16:47.522+03:00  INFO 131784 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-01T00:16:47.523+03:00  INFO 131784 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-01T00:16:47.524+03:00  INFO 131784 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-01T00:16:47.567+03:00  INFO 131784 --- [http-nio-8080-exec-1] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Params: []
+2024-03-01T00:16:47.662+03:00  INFO 131784 --- [http-nio-8080-exec-1] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Params: [com.example.taskmanager.model.RegularTask@7b8a396c]
+2024-03-01T00:16:47.697+03:00  INFO 131784 --- [http-nio-8080-exec-1] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Result: null. Execution Time: 35 ms
+2024-03-01T00:16:47.702+03:00  INFO 131784 --- [http-nio-8080-exec-1] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Result: <200 OK OK,Task successfully generated,[]>. Execution Time: 137 ms
+2024-03-01T00:16:49.521+03:00  INFO 131784 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Params: []
+2024-03-01T00:16:49.621+03:00  INFO 131784 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Params: [com.example.taskmanager.model.RegularTask@6461531d]
+2024-03-01T00:16:49.649+03:00  INFO 131784 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Result: null. Execution Time: 28 ms
+2024-03-01T00:16:49.650+03:00  INFO 131784 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Result: <200 OK OK,Task successfully generated,[]>. Execution Time: 129 ms
+2024-03-01T00:16:51.329+03:00  INFO 131784 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Params: []
+2024-03-01T00:16:51.442+03:00  INFO 131784 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Params: [com.example.taskmanager.model.RegularTask@29790cac]
+2024-03-01T00:16:51.471+03:00  INFO 131784 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Result: null. Execution Time: 29 ms
+2024-03-01T00:16:51.472+03:00  INFO 131784 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Result: <200 OK OK,Task successfully generated,[]>. Execution Time: 144 ms
+2024-03-01T00:17:54.049+03:00  INFO 131784 --- [http-nio-8080-exec-7] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.addTask(..): Params: [com.example.taskmanager.model.TaskRequest@1880cc44]
+2024-03-01T00:17:54.241+03:00  INFO 131784 --- [http-nio-8080-exec-7] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Params: [com.example.taskmanager.model.RegularTask@b3fe98c]
+2024-03-01T00:17:54.261+03:00  INFO 131784 --- [http-nio-8080-exec-7] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Result: null. Execution Time: 20 ms
+2024-03-01T00:17:54.261+03:00  INFO 131784 --- [http-nio-8080-exec-7] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.addTask(..): Result: <200 OK OK,Task successfully added,[]>. Execution Time: 212 ms
+2024-03-01T00:18:04.481+03:00  INFO 131784 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Params: []
+2024-03-01T00:18:04.482+03:00  INFO 131784 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Params: []
+2024-03-01T00:18:04.643+03:00  INFO 131784 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Result: [com.example.taskmanager.model.RegularTask@75e27edf, com.example.taskmanager.model.RegularTask@40a485e9, com.example.taskmanager.model.RegularTask@fab8797, com.example.taskmanager.model.RegularTask@171c7ca]. Execution Time: 161 ms
+2024-03-01T00:18:04.644+03:00  INFO 131784 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Result: <200 OK OK,[com.example.taskmanager.model.RegularTask@75e27edf, com.example.taskmanager.model.RegularTask@40a485e9, com.example.taskmanager.model.RegularTask@fab8797, com.example.taskmanager.model.RegularTask@171c7ca],[]>. Execution Time: 163 ms
+2024-03-01T00:21:28.263+03:00  INFO 131784 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-01T00:21:28.269+03:00  INFO 131784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-01T00:21:28.273+03:00  INFO 131784 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-01T00:22:00.977+03:00  INFO 128852 --- [restartedMain] c.e.taskmanager.TaskmanagerApplication   : Starting TaskmanagerApplication using Java 19.0.1 with PID 128852 (C:\Users\79818\Desktop\Java\Spring\taskmanager\target\classes started by 79818 in C:\Users\79818\Desktop\Java\Spring\taskmanager)
+2024-03-01T00:22:00.979+03:00  INFO 128852 --- [restartedMain] c.e.taskmanager.TaskmanagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-01T00:22:01.056+03:00  INFO 128852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-01T00:22:01.057+03:00  INFO 128852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-01T00:22:02.142+03:00  INFO 128852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-01T00:22:02.208+03:00  INFO 128852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2024-03-01T00:22:03.061+03:00  INFO 128852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-01T00:22:03.075+03:00  INFO 128852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-01T00:22:03.075+03:00  INFO 128852 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-03-01T00:22:03.264+03:00  INFO 128852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-01T00:22:03.265+03:00  INFO 128852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2208 ms
+2024-03-01T00:22:03.502+03:00  INFO 128852 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-01T00:22:03.578+03:00  INFO 128852 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-03-01T00:22:03.626+03:00  INFO 128852 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-01T00:22:03.905+03:00  INFO 128852 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-01T00:22:03.937+03:00  INFO 128852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-01T00:22:04.059+03:00  INFO 128852 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ae5dc6a
+2024-03-01T00:22:04.061+03:00  INFO 128852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-01T00:22:04.479+03:00 ERROR 128852 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Column 'task_type' is duplicated in mapping for entity 'com.example.taskmanager.model.UrgentTask' (use '@Column(insertable=false, updatable=false)' when mapping multiple properties to the same column)
+2024-03-01T00:22:04.480+03:00  WARN 128852 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Column 'task_type' is duplicated in mapping for entity 'com.example.taskmanager.model.UrgentTask' (use '@Column(insertable=false, updatable=false)' when mapping multiple properties to the same column)
+2024-03-01T00:22:04.482+03:00  INFO 128852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-01T00:22:04.489+03:00  INFO 128852 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-01T00:22:04.491+03:00  INFO 128852 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-01T00:22:04.505+03:00  INFO 128852 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-03-01T00:22:04.636+03:00 ERROR 128852 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Column 'task_type' is duplicated in mapping for entity 'com.example.taskmanager.model.UrgentTask' (use '@Column(insertable=false, updatable=false)' when mapping multiple properties to the same column)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1773) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:325) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:323) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1231) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:949) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:624) ~[spring-context-6.1.3.jar:6.1.3]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:334) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-3.2.2.jar:3.2.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-3.2.2.jar:3.2.2]
+	at com.example.taskmanager.TaskmanagerApplication.main(TaskmanagerApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.2.jar:3.2.2]
+Caused by: jakarta.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Column 'task_type' is duplicated in mapping for entity 'com.example.taskmanager.model.UrgentTask' (use '@Column(insertable=false, updatable=false)' when mapping multiple properties to the same column)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421) ~[spring-orm-6.1.3.jar:6.1.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.3.jar:6.1.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:352) ~[spring-orm-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1820) ~[spring-beans-6.1.3.jar:6.1.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1769) ~[spring-beans-6.1.3.jar:6.1.3]
+	... 19 common frames omitted
+Caused by: org.hibernate.MappingException: Column 'task_type' is duplicated in mapping for entity 'com.example.taskmanager.model.UrgentTask' (use '@Column(insertable=false, updatable=false)' when mapping multiple properties to the same column)
+	at org.hibernate.mapping.Value.checkColumnDuplication(Value.java:197) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.mapping.MappingHelper.checkPropertyColumnDuplication(MappingHelper.java:249) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.mapping.PersistentClass.checkColumnDuplication(PersistentClass.java:935) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.mapping.PersistentClass.validate(PersistentClass.java:678) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.mapping.SingleTableSubclass.validate(SingleTableSubclass.java:44) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.boot.internal.MetadataImpl.validate(MetadataImpl.java:497) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:273) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:450) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1507) ~[hibernate-core-6.4.1.Final.jar:6.4.1.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.3.jar:6.1.3]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:376) ~[spring-orm-6.1.3.jar:6.1.3]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.3.jar:6.1.3]
+	... 23 common frames omitted
+
+2024-03-01T00:25:29.643+03:00  INFO 135812 --- [restartedMain] c.e.taskmanager.TaskmanagerApplication   : Starting TaskmanagerApplication using Java 19.0.1 with PID 135812 (C:\Users\79818\Desktop\Java\Spring\taskmanager\target\classes started by 79818 in C:\Users\79818\Desktop\Java\Spring\taskmanager)
+2024-03-01T00:25:29.647+03:00  INFO 135812 --- [restartedMain] c.e.taskmanager.TaskmanagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-03-01T00:25:29.726+03:00  INFO 135812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-03-01T00:25:29.726+03:00  INFO 135812 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-03-01T00:25:30.972+03:00  INFO 135812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-01T00:25:31.196+03:00  INFO 135812 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 201 ms. Found 2 JPA repository interfaces.
+2024-03-01T00:25:32.365+03:00  INFO 135812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-01T00:25:32.387+03:00  INFO 135812 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-01T00:25:32.388+03:00  INFO 135812 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2024-03-01T00:25:32.461+03:00  INFO 135812 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-01T00:25:32.462+03:00  INFO 135812 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2734 ms
+2024-03-01T00:25:32.685+03:00  INFO 135812 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-01T00:25:32.749+03:00  INFO 135812 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-03-01T00:25:32.797+03:00  INFO 135812 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-01T00:25:33.069+03:00  INFO 135812 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-01T00:25:33.101+03:00  INFO 135812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-01T00:25:33.213+03:00  INFO 135812 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5ae5dc6a
+2024-03-01T00:25:33.215+03:00  INFO 135812 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-01T00:25:34.288+03:00  INFO 135812 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-01T00:25:34.461+03:00  INFO 135812 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-01T00:25:35.140+03:00  WARN 135812 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-01T00:25:35.564+03:00  WARN 135812 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2024-03-01T00:25:35.799+03:00  INFO 135812 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-03-01T00:25:35.922+03:00  INFO 135812 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2024-03-01T00:25:35.934+03:00  INFO 135812 --- [restartedMain] c.e.taskmanager.TaskmanagerApplication   : Started TaskmanagerApplication in 6.995 seconds (process running for 7.842)
+2024-03-01T00:25:47.478+03:00  INFO 135812 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-01T00:25:47.479+03:00  INFO 135812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-01T00:25:47.481+03:00  INFO 135812 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-03-01T00:25:47.528+03:00  INFO 135812 --- [http-nio-8080-exec-2] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Params: []
+2024-03-01T00:25:47.608+03:00  INFO 135812 --- [http-nio-8080-exec-2] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Params: [com.example.taskmanager.model.RegularTask@354f0861]
+2024-03-01T00:25:47.634+03:00  INFO 135812 --- [http-nio-8080-exec-2] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Result: null. Execution Time: 26 ms
+2024-03-01T00:25:47.637+03:00  INFO 135812 --- [http-nio-8080-exec-2] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Result: <200 OK OK,Task successfully generated,[]>. Execution Time: 111 ms
+2024-03-01T00:25:49.352+03:00  INFO 135812 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Params: []
+2024-03-01T00:25:49.365+03:00  INFO 135812 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Params: [com.example.taskmanager.model.UrgentTask@15849cc2]
+2024-03-01T00:25:49.376+03:00  INFO 135812 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Result: null. Execution Time: 11 ms
+2024-03-01T00:25:49.376+03:00  INFO 135812 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Result: <200 OK OK,Task successfully generated,[]>. Execution Time: 24 ms
+2024-03-01T00:25:50.947+03:00  INFO 135812 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Params: []
+2024-03-01T00:25:51.048+03:00  INFO 135812 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Params: [com.example.taskmanager.model.RegularTask@4dc192d7]
+2024-03-01T00:25:51.059+03:00  INFO 135812 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Result: null. Execution Time: 11 ms
+2024-03-01T00:25:51.059+03:00  INFO 135812 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.generateTask(): Result: <200 OK OK,Task successfully generated,[]>. Execution Time: 112 ms
+2024-03-01T00:25:59.259+03:00  INFO 135812 --- [http-nio-8080-exec-5] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Params: []
+2024-03-01T00:25:59.260+03:00  INFO 135812 --- [http-nio-8080-exec-5] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Params: []
+2024-03-01T00:25:59.525+03:00  INFO 135812 --- [http-nio-8080-exec-5] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Result: [com.example.taskmanager.model.RegularTask@2c833e10, com.example.taskmanager.model.UrgentTask@720368a9, com.example.taskmanager.model.RegularTask@30ad1204]. Execution Time: 265 ms
+2024-03-01T00:25:59.525+03:00  INFO 135812 --- [http-nio-8080-exec-5] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Result: <200 OK OK,[com.example.taskmanager.model.RegularTask@2c833e10, com.example.taskmanager.model.UrgentTask@720368a9, com.example.taskmanager.model.RegularTask@30ad1204],[]>. Execution Time: 266 ms
+2024-03-01T00:26:18.772+03:00  INFO 135812 --- [http-nio-8080-exec-6] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.addTask(..): Params: [com.example.taskmanager.model.TaskRequest@133692c3]
+2024-03-01T00:26:18.849+03:00  INFO 135812 --- [http-nio-8080-exec-6] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Params: [com.example.taskmanager.model.RegularTask@27ad38b4]
+2024-03-01T00:26:18.867+03:00  INFO 135812 --- [http-nio-8080-exec-6] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.addTask(..): Result: null. Execution Time: 18 ms
+2024-03-01T00:26:18.867+03:00  INFO 135812 --- [http-nio-8080-exec-6] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.addTask(..): Result: <200 OK OK,Task successfully added,[]>. Execution Time: 96 ms
+2024-03-01T00:26:23.582+03:00  INFO 135812 --- [http-nio-8080-exec-7] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Params: []
+2024-03-01T00:26:23.582+03:00  INFO 135812 --- [http-nio-8080-exec-7] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Params: []
+2024-03-01T00:26:23.591+03:00  INFO 135812 --- [http-nio-8080-exec-7] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Result: [com.example.taskmanager.model.RegularTask@148f2be, com.example.taskmanager.model.UrgentTask@107f19e8, com.example.taskmanager.model.RegularTask@47e7220e, com.example.taskmanager.model.RegularTask@2b09ecf5]. Execution Time: 9 ms
+2024-03-01T00:26:23.591+03:00  INFO 135812 --- [http-nio-8080-exec-7] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Result: <200 OK OK,[com.example.taskmanager.model.RegularTask@148f2be, com.example.taskmanager.model.UrgentTask@107f19e8, com.example.taskmanager.model.RegularTask@47e7220e, com.example.taskmanager.model.RegularTask@2b09ecf5],[]>. Execution Time: 9 ms
+2024-03-01T00:27:10.047+03:00  INFO 135812 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.assignExecutorToTask(..): Params: [3, 1]
+2024-03-01T00:27:10.048+03:00  INFO 135812 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getTaskById(..): Params: [3]
+2024-03-01T00:27:10.169+03:00  INFO 135812 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getTaskById(..): Result: com.example.taskmanager.model.RegularTask@496ceb75. Execution Time: 121 ms
+2024-03-01T00:27:10.189+03:00  INFO 135812 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.saveTask(..): Params: [com.example.taskmanager.model.RegularTask@496ceb75]
+2024-03-01T00:27:10.223+03:00  INFO 135812 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.saveTask(..): Result: null. Execution Time: 34 ms
+2024-03-01T00:27:10.224+03:00  INFO 135812 --- [http-nio-8080-exec-8] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.assignExecutorToTask(..): Result: null. Execution Time: 177 ms
+2024-03-01T00:27:15.922+03:00  INFO 135812 --- [http-nio-8080-exec-9] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Params: []
+2024-03-01T00:27:15.922+03:00  INFO 135812 --- [http-nio-8080-exec-9] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Params: []
+2024-03-01T00:27:15.931+03:00  INFO 135812 --- [http-nio-8080-exec-9] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getAllTasks(): Result: [com.example.taskmanager.model.RegularTask@53b565f6, com.example.taskmanager.model.UrgentTask@400224e5, com.example.taskmanager.model.RegularTask@51741759, com.example.taskmanager.model.RegularTask@502fe517]. Execution Time: 9 ms
+2024-03-01T00:27:15.931+03:00  INFO 135812 --- [http-nio-8080-exec-9] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllTasks(): Result: <200 OK OK,[com.example.taskmanager.model.RegularTask@53b565f6, com.example.taskmanager.model.UrgentTask@400224e5, com.example.taskmanager.model.RegularTask@51741759, com.example.taskmanager.model.RegularTask@502fe517],[]>. Execution Time: 9 ms
+2024-03-01T00:27:41.389+03:00  INFO 135812 --- [http-nio-8080-exec-10] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllExecutors(): Params: []
+2024-03-01T00:27:41.397+03:00  INFO 135812 --- [http-nio-8080-exec-10] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getAllExecutors(): Result: <200 OK OK,[com.example.taskmanager.model.Person@303a14a2, com.example.taskmanager.model.Person@6594c735, com.example.taskmanager.model.Person@34744831, com.example.taskmanager.model.Person@495f88b0, com.example.taskmanager.model.Person@55b5d667],[]>. Execution Time: 8 ms
+2024-03-01T00:30:15.235+03:00  INFO 135812 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.updateTaskStatus(..): Params: [1, COMPLETED]
+2024-03-01T00:30:15.236+03:00  INFO 135812 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.updateTaskStatus(..): Params: [1, COMPLETED]
+2024-03-01T00:30:15.380+03:00  INFO 135812 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.updateTaskStatus(..): Result: null. Execution Time: 144 ms
+2024-03-01T00:30:15.381+03:00  INFO 135812 --- [http-nio-8080-exec-3] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.updateTaskStatus(..): Result: <200 OK OK,Task status updated,[]>. Execution Time: 146 ms
+2024-03-01T00:30:25.289+03:00  INFO 135812 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getTaskById(..): Params: [1]
+2024-03-01T00:30:25.290+03:00  INFO 135812 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getTaskById(..): Params: [1]
+2024-03-01T00:30:25.312+03:00  INFO 135812 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskService.getTaskById(..): Result: com.example.taskmanager.model.RegularTask@5c8e2cd0. Execution Time: 22 ms
+2024-03-01T00:30:25.314+03:00  INFO 135812 --- [http-nio-8080-exec-4] c.e.t.aspect.UserActionLoggingAspect     : User action in method TaskController.getTaskById(..): Result: <200 OK OK,com.example.taskmanager.model.RegularTask@5c8e2cd0,[]>. Execution Time: 25 ms
+2024-03-01T00:30:33.883+03:00  INFO 135812 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-01T00:30:33.888+03:00  INFO 135812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-01T00:30:33.893+03:00  INFO 135812 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
